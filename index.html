@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Untuk Anissa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;1,500&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--rose:#e0517f;--deep:#9c2a55;--blush:#ffd9e6;--cream:#fff8fb;--gold:#c9a15a;--ink:#4a1f33}
+*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{font-family:'Quicksand',sans-serif;color:var(--ink);line-height:1.8;font-size:17px;overflow-x:hidden;
+background-color:#ffc4d8;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cg fill='%23ffffff' fill-opacity='.55'%3E%3Cpath d='M30 44c-9-6-14-12-14-18a8 8 0 0114-5 8 8 0 0114 5c0 6-5 12-14 18z' transform='scale(.7) translate(10 6)'/%3E%3Ccircle cx='92' cy='88' r='3'/%3E%3Ccircle cx='85' cy='81' r='3'/%3E%3Ccircle cx='99' cy='81' r='3'/%3E%3Ccircle cx='85' cy='95' r='3'/%3E%3Ccircle cx='99' cy='95' r='3'/%3E%3C/g%3E%3Cg fill='%23ffd76e' fill-opacity='.9'%3E%3Ccircle cx='92' cy='88' r='2.2'/%3E%3Ccircle cx='100' cy='20' r='1.6'/%3E%3Ccircle cx='20' cy='100' r='1.6'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment:fixed}
+h1,h2,h3{font-family:'Playfair Display',serif;font-weight:600;color:var(--deep);line-height:1.25}
+.script{font-family:'Great Vibes',cursive;font-weight:400}
+section{padding:32px 20px;max-width:760px;margin:auto;text-align:center}
+section.lock{display:none}
+h2{font-size:clamp(1.7rem,6vw,2.4rem);margin-bottom:10px}
+.sub{opacity:.8;margin-bottom:26px}
+.glass{background:rgba(255,255,255,.72);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid #fff;border-radius:26px;box-shadow:0 20px 50px -20px rgba(156,42,85,.45);padding:26px}
+.btn{font:600 1rem 'Quicksand';border:0;cursor:pointer;color:#fff;background:linear-gradient(135deg,#f0709a,var(--deep));padding:14px 30px;border-radius:99px;box-shadow:0 10px 24px -8px rgba(156,42,85,.7);transition:transform .2s}
+.btn:active{transform:scale(.95)}
+.pop{animation:pop .7s cubic-bezier(.2,1.4,.4,1) both}
+@keyframes pop{from{opacity:0;transform:translateY(30px) scale(.94)}}
+svg.h{fill:currentColor}
+#bar{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,#ff9ebd,var(--gold));z-index:50;transition:width .8s}
+#amb{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+#amb i{position:absolute;bottom:-40px;width:var(--s);color:#fff;opacity:.5;animation:up var(--d) linear infinite}
+@keyframes up{to{transform:translateY(-115vh) rotate(40deg)}}
+main,#cover{position:relative;z-index:1}
+#music{position:fixed;right:14px;top:16px;z-index:60;width:44px;height:44px;border-radius:50%;border:0;background:#fff;color:var(--rose);box-shadow:0 6px 18px rgba(156,42,85,.35);cursor:pointer;display:none}
+#music.off{opacity:.5}
+
+/* cover */
+#cover{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:radial-gradient(circle at 50% 30%,#ffe3ee,#ff9ebd);text-align:center;padding:20px;transition:opacity 1s,transform 1s}
+#cover.gone{opacity:0;transform:scale(1.15);pointer-events:none}
+.env{width:min(300px,78vw);aspect-ratio:1.45;margin:0 auto 34px;position:relative;cursor:pointer;animation:float 3s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-12px)}}
+.env b{position:absolute;inset:0;background:#fff;border-radius:14px;box-shadow:0 24px 50px -12px rgba(156,42,85,.6)}
+.env u{position:absolute;inset:0;clip-path:polygon(0 0,100% 0,50% 58%);background:linear-gradient(#ffe9f1,#ffc0d4);border-radius:14px 14px 0 0;transform-origin:top;transition:transform .8s}
+.env .seal{position:absolute;left:50%;top:50%;width:62px;height:62px;margin:-31px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ff8fb3,var(--deep));color:#fff;display:grid;place-items:center;z-index:3;box-shadow:0 6px 14px rgba(0,0,0,.3)}
+.env .seal svg{width:28px}
+#cover.open .env u{transform:rotateX(180deg)}
+#cover h1{font-size:2.8rem;color:var(--deep);margin-bottom:6px}
+
+/* hero */
+#hero{position:relative;width:100%;max-width:none;margin:0;padding:0;height:100svh;min-height:620px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.bigh{position:absolute;left:50%;top:50%;width:min(125vw,640px);translate:-50% -50%;color:rgba(255,255,255,.38);animation:bt 2.2s ease-in-out infinite}
+@keyframes bt{50%{scale:1.07}}
+.fp{position:absolute;z-index:1;width:clamp(92px,24vw,180px);aspect-ratio:3/4;padding:6px 6px 22px;background:#fff;border-radius:8px;box-shadow:0 16px 30px -10px rgba(156,42,85,.65);rotate:var(--r);translate:calc(var(--mx,0)*var(--d)*1px) calc(var(--my,0)*var(--d)*1px);animation:bob 4s ease-in-out infinite;cursor:pointer}
+.fp div{width:100%;height:100%;border-radius:4px;overflow:hidden;background:linear-gradient(135deg,#ffc0d6,#ff8fb3)}
+.fp img{width:100%;height:100%;object-fit:cover;display:block}
+.fp.pp{animation:jump2 .5s}
+@keyframes jump2{40%{transform:scale(1.22) rotate(6deg)}}
+.hc{position:relative;z-index:2;width:min(400px,84vw);padding:28px 22px 26px;background:rgba(255,255,255,.6);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid #fff;border-radius:34px;box-shadow:0 24px 50px -20px rgba(156,42,85,.55)}
+#hero .bub{position:static;display:inline-block;margin-bottom:12px;animation:pop .5s both}
+#hero .scroll{position:absolute;bottom:14px;left:0;right:0;margin:0;z-index:3;font-size:.9rem}
+.ht{font-size:clamp(2.1rem,9vw,3.1rem);color:var(--rose);text-shadow:0 3px 0 #fff;margin-top:6px}
+.ring{width:150px;height:150px;border-radius:50%;margin:0 auto 22px;padding:6px;background:conic-gradient(var(--gold),#fff,var(--rose),var(--gold));box-shadow:0 14px 30px rgba(156,42,85,.4)}
+.ring div{width:100%;height:100%;border-radius:50%;background:#ffd0e0 center/cover;overflow:hidden}
+.ring img,.pol img{width:100%;height:100%;object-fit:cover;display:block}
+.scroll{margin-top:30px;animation:float 2s infinite;color:var(--deep);font-weight:600}
+
+/* hero */
+.stage{position:relative;width:min(320px,86vw);height:340px;margin:0 auto 10px}
+.ph1{position:absolute;left:50%;top:52px;width:210px;height:236px;margin-left:-105px;cursor:pointer;animation:wob 3.2s ease-in-out infinite}
+@keyframes wob{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg) translateY(-8px)}}
+.ph1.bn{animation:jump .5s}
+@keyframes jump{40%{transform:scale(1.12,.9) translateY(-24px)}}
+.blob{width:100%;height:100%;border-radius:48% 52% 46% 54%/58% 56% 44% 42%;border:7px solid #fff;background:linear-gradient(135deg,#ffc0d6,#ff8fb3);overflow:hidden;box-shadow:0 18px 34px -10px rgba(156,42,85,.6)}
+.blob img,.sm img{width:100%;height:100%;object-fit:cover;display:block}
+.tape{position:absolute;top:-10px;left:50%;width:70px;height:22px;margin-left:-35px;background:rgba(255,236,170,.9);transform:rotate(-4deg);z-index:2;border-radius:3px}
+.sm{position:absolute;width:98px;height:98px;border-radius:50%;border:5px solid #fff;overflow:hidden;background:linear-gradient(135deg,#ffc0d6,#ff8fb3);box-shadow:0 10px 20px -8px rgba(156,42,85,.6);animation:bob 3.4s ease-in-out infinite}
+.s1{left:0;bottom:6px}.s2{right:0;top:96px;animation-delay:-1.6s}
+@keyframes bob{50%{transform:translateY(-10px)}}
+.bub{position:absolute;right:0;top:0;background:#fff;padding:8px 16px;border-radius:18px 18px 18px 4px;font-weight:600;color:var(--deep);box-shadow:0 8px 18px -8px rgba(156,42,85,.5);z-index:3}
+.spk{position:absolute;color:#ffd76e;width:20px;animation:tw 1.8s infinite}
+@keyframes tw{50%{transform:scale(.4) rotate(30deg);opacity:.4}}
+/* game 1 */
+.bh{position:relative;width:190px;margin:10px auto 0;cursor:pointer;user-select:none;touch-action:manipulation}
+.bh svg{width:100%;display:block}
+.bh .base{color:#fff;filter:drop-shadow(0 8px 12px rgba(156,42,85,.35))}
+.bh .fill{position:absolute;inset:0;color:var(--rose);clip-path:inset(calc(100% - var(--p,0%)) 0 0 0);transition:clip-path .25s}
+.bh.t{animation:thump .25s}
+@keyframes thump{50%{transform:scale(1.12)}}
+.meter{height:12px;border-radius:9px;background:#fff;margin:18px auto 0;max-width:260px;overflow:hidden}
+.meter i{display:block;height:100%;width:var(--p,0%);background:linear-gradient(90deg,#ff9ebd,var(--rose));transition:width .25s}
+.count{font:600 1.2rem 'Playfair Display';margin-top:12px;color:var(--deep)}
+.sp{position:fixed;z-index:150;pointer-events:none;color:var(--rose);width:18px;animation:sp .9s forwards}
+@keyframes sp{to{transform:translate(var(--x),-90px) scale(.4);opacity:0}}
+/* gallery */
+.rail{display:flex;gap:18px;overflow-x:auto;padding:16px 20px 12px;width:100vw;margin-left:calc(50% - 50vw);scrollbar-width:none}.rail::-webkit-scrollbar{display:none}
+.pol{flex:0 0 min(70vw,260px);background:#fff;padding:12px 12px 16px;border-radius:8px;box-shadow:0 16px 30px -10px rgba(156,42,85,.5);transform:rotate(var(--r));transition:transform .4s;cursor:pointer}
+.pol:hover,.pol.on{transform:rotate(0) scale(1.06)}
+.pol div{aspect-ratio:1;background:linear-gradient(135deg,#ffc0d6,#ff8fb3);border-radius:4px;overflow:hidden}
+.pol p{margin-top:10px;font-size:.95rem;font-weight:500}
+.col{display:flex;justify-content:center;margin-bottom:26px}
+.mini{width:30vw;max-width:130px;aspect-ratio:3/4;background:#fff;padding:6px;border-radius:6px;box-shadow:0 12px 24px -8px rgba(156,42,85,.6);transform:rotate(var(--r));margin:0 -8px}
+.mini div{width:100%;height:100%;background:linear-gradient(135deg,#ffc0d6,#ff8fb3);border-radius:3px;overflow:hidden}
+.mini.big{width:36vw;max-width:156px;z-index:2;margin-top:-10px}
+.mini img,.pol img,.fr img,.gb img,.ph img{width:100%;height:100%;object-fit:cover;display:block}
+/* quiz */
+.q{font:600 1.3rem 'Playfair Display';margin-bottom:16px;color:var(--deep)}
+.opts{display:grid;gap:10px}
+.opt{font:500 1rem 'Quicksand';padding:14px;border-radius:16px;border:2px solid #ffc0d6;background:#fff;color:var(--ink);cursor:pointer;transition:.2s}
+.opt:active{transform:scale(.97)}
+.opt.bad{border-color:#e0517f;background:#ffe3ec;animation:shake .4s}
+.opt.good{border-color:var(--gold);background:#fff3dc}
+@keyframes shake{25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+.fb{min-height:28px;margin-top:12px;font-weight:600;color:var(--deep)}
+/* booth */
+.strip{width:min(210px,70%);margin:6px auto 0;background:#fff;padding:12px 12px 16px;border-radius:6px;box-shadow:0 22px 40px -14px rgba(156,42,85,.6);transform:rotate(-3deg);cursor:pointer;transition:transform .4s}
+.strip.w{animation:wig .6s}
+@keyframes wig{25%{transform:rotate(5deg)}60%{transform:rotate(-8deg)}}
+.fr{aspect-ratio:4/3;background:linear-gradient(135deg,#ffc0d6,#ff8fb3);margin-bottom:8px;border-radius:3px;overflow:hidden}
+.strip .script{font-size:1.6rem;color:var(--rose);line-height:1.2}
+video{width:100%;border-radius:20px;display:block;background:#2a0f1c;aspect-ratio:16/9}
+/* gifts */
+.gifts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.gb{position:relative;aspect-ratio:3/4;perspective:700px;cursor:pointer}
+.gb span{position:absolute;inset:0;border-radius:16px;backface-visibility:hidden;transition:transform .7s}
+.gb .f{display:grid;place-items:center;background:linear-gradient(135deg,#f0709a,var(--deep));color:#ffe3ee;animation:float 2.6s ease-in-out infinite}
+.gb .f svg{width:46%}
+.gb .b{background:#fff;padding:6px;transform:rotateY(180deg);display:flex;flex-direction:column;font-size:.78rem;font-weight:600;line-height:1.3;color:var(--deep)}
+.gb .ph{flex:1;min-height:0;background:linear-gradient(135deg,#ffc0d6,#ff8fb3);border-radius:10px;overflow:hidden;margin-bottom:5px}
+.gb.on .f{transform:rotateY(180deg);animation:none}.gb.on .b{transform:rotateY(0)}
+/* chat */
+.chat{display:flex;flex-direction:column;gap:9px;text-align:left;padding:18px 14px;background:rgba(255,255,255,.55);border-radius:26px;border:1px solid #fff;min-height:200px}
+.bb{align-self:flex-start;max-width:86%;background:#fff;padding:11px 16px;border-radius:20px 20px 20px 5px;box-shadow:0 6px 14px -6px rgba(156,42,85,.4);animation:pop .5s both}
+.bb.hl{background:linear-gradient(135deg,#f0709a,var(--deep));color:#fff;font:600 1.25rem 'Playfair Display';padding:16px 20px}
+.bb.en{background:#fff3dc;font-style:italic;font-weight:600;color:var(--deep)}
+.bb.im{padding:6px;width:min(250px,80%)}
+.bb.im div{aspect-ratio:4/3;border-radius:14px;overflow:hidden;background:linear-gradient(135deg,#ffc0d6,#ff8fb3)}
+.bb.im img{width:100%;height:100%;object-fit:cover}
+.bb.sg{background:none;box-shadow:none;font:italic 600 1.3rem 'Playfair Display';color:var(--rose);padding:0 8px}
+.dots{align-self:flex-start;display:flex;gap:5px;background:#fff;padding:14px 16px;border-radius:20px}
+.dots i{width:8px;height:8px;border-radius:50%;background:#e0517f;animation:bl 1s infinite}
+.dots i:nth-child(2){animation-delay:.15s}.dots i:nth-child(3){animation-delay:.3s}
+@keyframes bl{50%{transform:translateY(-6px);opacity:.4}}
+#nx{margin-top:18px}
+/* bouquet */
+.bq svg{width:min(340px,100%);display:block;margin:0 auto;overflow:visible}
+#bsv #bg{transform-origin:160px 300px;animation:sway 5s ease-in-out infinite}
+@keyframes sway{50%{transform:rotate(1.8deg)}}
+.fl{cursor:pointer}
+.fl .bloom,.fl .bud{transform-box:fill-box;transform-origin:center}
+.fl .bloom{transform:scale(0);transition:transform .8s cubic-bezier(.2,1.7,.4,1)}
+.fl .bud{transition:.4s}
+.fl.on .bloom{transform:scale(1)}
+.fl.on .bud,.fl.on .pr{opacity:0;transform:scale(0)}
+.fl .pr{fill:none;stroke:#fff;stroke-width:3;transform-box:fill-box;transform-origin:center;animation:pr 1.6s ease-out infinite}
+@keyframes pr{from{transform:scale(.6);opacity:1}to{transform:scale(1.7);opacity:0}}
+.bow{transform-box:fill-box;transform-origin:center}
+.done .bow{animation:bowp .8s 3}
+@keyframes bowp{50%{transform:scale(1.3)}}
+.dots2{display:flex;gap:9px;justify-content:center;margin-top:10px}
+.dots2 i{width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid #f0709a;transition:.3s}
+.dots2 i.on{background:var(--rose);transform:scale(1.25)}
+.info{margin-top:14px;background:#fff;border-radius:20px;padding:16px 18px;box-shadow:0 10px 22px -12px rgba(156,42,85,.5);min-height:116px;display:flex;flex-direction:column;justify-content:center}
+.info h3{font-size:1.25rem;color:var(--rose)}
+.info p{margin-top:2px}
+/* final */
+#final .script{font-size:clamp(2.6rem,11vw,4.2rem);color:var(--rose)}
+.ans{display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;min-height:110px;margin-top:20px;position:relative}
+#no{background:#fff;color:var(--deep);box-shadow:0 6px 16px rgba(0,0,0,.15)}
+#yes{font-size:1.15rem;animation:beat 1.2s infinite}
+@keyframes beat{50%{transform:scale(1.08)}}
+#thanks{display:none}#thanks.show{display:block}
+footer{position:relative;z-index:1;text-align:center;padding:30px 20px 50px;color:var(--deep);font-size:.95rem}
+footer .script{font-size:2rem;display:block}
+.cf{position:fixed;top:-30px;z-index:200;pointer-events:none;animation:fall 2.8s ease-in forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(500deg);opacity:.8}}
+/* confess */
+.vframe{position:relative;max-width:420px;margin:0 auto;background:#fff;padding:12px 12px 18px;border-radius:10px;box-shadow:0 22px 44px -16px rgba(156,42,85,.6);transform:rotate(-1.5deg)}
+.vframe .tape{top:-12px}
+.vframe video{aspect-ratio:auto;max-height:68svh;object-fit:contain;border-radius:6px}
+.vframe .script{font-size:1.7rem;color:var(--rose);margin-top:8px;line-height:1.2}
+.skip{background:none;border:0;font:500 .9rem 'Quicksand';color:var(--deep);opacity:.65;text-decoration:underline;cursor:pointer;margin-top:16px}
+#cfNext{display:none;margin-top:20px}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important}}
+.fp img,.pol img,.fr img,.gb img,.bb.im img{object-position:center 30%}
+img[src$="foto-3.jpeg"]{object-position:center 40%!important}
+img[src$="foto-8.jpeg"]{object-position:center 85%!important}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div id="amb"></div>
+<button id="music" aria-label="Musik"><svg class="h" viewBox="0 0 24 24" width="22"><path d="M9 3v11.3A4 4 0 1011 18V8h6V3z"/></svg></button>
+<audio id="aud" loop preload="auto"><source src="assets/Berpayung-Tuhan.mp3" type="audio/mpeg"></audio>
+
+<div id="cover">
+  <div>
+    <h1 class="script">Untuk Anissa</h1>
+    <p style="margin-bottom:28px">Ada sesuatu yang ingin disampaikan, dari Dafin.</p>
+    <div class="env" id="env"><b></b><u></u><div class="seal"><svg class="h" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div></div>
+    <button class="btn" id="openBtn">Buka kartunya</button>
+    <p style="font-size:.85rem;margin-top:16px;opacity:.7">Nyalakan suara untuk pengalaman terbaik</p>
+  </div>
+</div>
+
+<main>
+<section id="hero">
+  <div class="bigh"><svg class="h" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div>
+  <div class="fp" style="left:3%;top:4%;--r:-9deg;--d:16;animation-delay:-0.0s"><div><img src="assets/foto-1.jpeg" alt="" onerror="this.remove()"></div></div><div class="fp" style="right:4%;top:7%;width:clamp(110px,30vw,210px);--r:8deg;--d:22;animation-delay:-0.8s"><div><img src="assets/foto-2.jpeg" alt="" onerror="this.remove()"></div></div><div class="fp" style="left:5%;bottom:9%;--r:7deg;--d:-18;animation-delay:-1.6s"><div><img src="assets/foto-3.jpeg" alt="" onerror="this.remove()"></div></div><div class="fp" style="right:5%;bottom:7%;--r:-7deg;--d:-14;animation-delay:-2.4s"><div><img src="assets/foto-4.jpeg" alt="" onerror="this.remove()"></div></div><div class="fp" style="left:36%;top:1.5%;width:clamp(70px,17vw,120px);--r:4deg;--d:10;animation-delay:-3.2s"><div><img src="assets/foto-5.jpeg" alt="" onerror="this.remove()"></div></div><div class="fp" style="right:34%;bottom:1.5%;width:clamp(70px,17vw,120px);--r:-5deg;--d:-10;animation-delay:-4.0s"><div><img src="assets/foto-6.jpeg" alt="" onerror="this.remove()"></div></div>
+  <div class="hc">
+    <div class="bub" id="bub">Psst, Anissa!</div>
+    <p>Hai, Anissa</p>
+    <h1 class="ht">Ada yang mau<br>aku ceritain</h1>
+    <p style="margin:10px 0 18px">Ada tiga permainan kecil yang gampang. Selesaikan satu per satu, nanti halaman berikutnya terbuka.</p>
+    <button class="btn" id="go">Mulai</button>
+  </div>
+  <div class="scroll">Ketuk foto-fotonya, ya</div>
+</section>
+
+<section id="g1">
+  <div class="glass">
+    <h2>Isi hatinya sampai penuh</h2>
+    <p class="sub">Ketuk hatinya berkali-kali. Makin banyak, makin penuh.</p>
+    <div class="bh" id="bh"><div class="base"><svg class="h" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div><div class="fill"><svg class="h" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div></div>
+    <div class="meter"><i id="mt"></i></div>
+    <div class="count" id="c1">Ketuk aku</div>
+  </div>
+</section>
+
+<section id="gal" class="lock">
+  <h2>Potongan cerita kita</h2>
+  <p class="sub">Fotonya jalan sendiri pelan-pelan. Ketuk untuk memperbesar, atau geser sendiri.</p>
+  <div class="rail" id="rail"></div>
+</section>
+
+<section id="g2" class="lock">
+  <div class="glass">
+    <h2>Tebak-tebakan</h2>
+    <p class="sub">Tiga pertanyaan ringan. Pilih jawaban yang menurutmu paling benar.</p>
+    <div id="qa"></div>
+    <div class="fb" id="fb"></div>
+  </div>
+</section>
+
+<section id="booth" class="lock">
+  <h2>Photobooth mini</h2>
+  <p class="sub">Ketuk stripnya.</p>
+  <div class="strip" id="strip">
+    <div class="fr"><img src="assets/foto-2.jpeg" alt="" onerror="this.remove()"></div><div class="fr"><img src="assets/foto-4.jpeg" alt="" onerror="this.remove()"></div><div class="fr"><img src="assets/foto-6.jpeg" alt="" onerror="this.remove()"></div><div class="fr"><img src="assets/foto-8.jpeg" alt="" onerror="this.remove()"></div>
+    <div class="script">Anissa dan senyumnya</div>
+  </div>
+</section>
+
+<section id="vid" class="lock">
+  <h2>Satu video buat kamu</h2>
+  <p class="sub">Musik otomatis mengecil saat video diputar.</p>
+  <video id="v" controls playsinline preload="metadata" poster="assets/cover-video.jpeg"><source src="assets/Video-Anissa.mp4" type="video/mp4"></video>
+</section>
+
+<section id="g3" class="lock">
+  <div class="glass">
+    <h2>Buka tiga kado</h2>
+    <p class="sub">Ketuk semua kadonya. Isinya kecil tapi tulus.</p>
+    <div class="gifts" id="gifts"></div>
+    <div class="count"><span id="c3">0</span> / 3 terbuka</div>
+  </div>
+</section>
+
+<section id="letter" class="lock">
+  <h2>Chat dari Dafin</h2>
+  <p class="sub">Ketuk tombol di bawah untuk lanjut membaca.</p>
+  <div class="chat" id="chat"></div>
+  <button class="btn" id="nx">Mulai</button>
+</section>
+
+<section id="confess" class="lock">
+  <h2>Ada yang mau Dafin bilang</h2>
+  <p class="sub">Langsung dari Dafin, buat kamu. Tonton sampai habis, ya.</p>
+  <div class="vframe">
+    <div class="tape"></div>
+    <video id="vc" controls playsinline preload="metadata"><source src="assets/Dafin-Confess.mp4#t=0.1" type="video/mp4"></video>
+    <div class="script">Dari Dafin, untuk Anissa</div>
+  </div>
+  <button class="btn" id="cfNext">Lanjut ke buketnya</button><br>
+  <button class="skip" id="cfSkip">Lewati</button>
+</section>
+
+<section id="bq" class="lock">
+  <div class="glass bq">
+    <h2>Filosofi buketnya</h2>
+    <p class="sub">Tiap elemen bunga punya arti buat kamu. Ketuk gambarnya untuk membaca maknanya.</p>
+    <img id="bsv" src="assets/bunga-untuk-anissa.jpeg" alt="Buket bunga" style="width:100%;max-width:340px;border-radius:16px;margin:0 auto;display:block;cursor:pointer;box-shadow:0 16px 30px -10px rgba(156,42,85,.5);transition:transform 0.2s;">
+    <div class="dots2" id="bd"></div>
+    <div class="info" id="bi"><h3>Ketuk gambarnya</h3><p>Ada lima makna yang tersembunyi di buket ini.</p></div>
+    <button class="btn" id="bkBtn" style="display:none;margin-top:18px">Terima buketnya</button>
+  </div>
+</section>
+
+<section id="final" class="lock">
+  <div class="glass">
+    <p>Jadi, Anissa...</p>
+    <h2 id="qh" style="font-size:clamp(1.7rem,7vw,2.4rem)">Boleh nggak aku<br>jadi tempat pulangmu?</h2>
+    <div class="ans" id="ans">
+      <button class="btn" id="yes">Boleh</button>
+      <button class="btn" id="no">Aku pikir dulu</button>
+    </div>
+    <div id="thanks"><h2 style="font-size:2rem">Terima kasih, Anissa</h2><p>Apa pun jawabannya, kamu sudah bikin aku berani. Dafin lagi nunggu dengan deg-degan.</p></div>
+  </div>
+</section>
+</main>
+
+<footer><span class="script">The Queen Bouquet</span>Dibuat dengan penuh cinta oleh The Queen Bouquet.</footer>
+<script>
+const $=s=>document.querySelector(s);
+const HEART='<svg class="h" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>';
+const GIFT='<svg class="h" viewBox="0 0 24 24"><path d="M20 7h-2.2A3 3 0 0012 4.6 3 3 0 006.2 7H4a1 1 0 00-1 1v3h18V8a1 1 0 00-1-1zM9 7a1 1 0 110-2 1 1 0 010 2zm6 0a1 1 0 110-2 1 1 0 010 2zM4 13v7a1 1 0 001 1h6v-8zm9 0v8h6a1 1 0 001-1v-7z"/></svg>';
+const IMG=f=>`<img src="assets/${f}" alt="" onerror="this.remove()">`;
+// ====== DAFTAR FOTO (ganti nama file / caption di sini) ======
+const FOTO={
+ gallery:[['hari-pertama.webp','Hari pertama yang aku ingat'],['foto-7.jpeg','Gaya santai yang aku suka'],['momen-kecil-yang-berarti.webp','Momen kecil yang berarti'],['kamu-dan-antusias.webp','Kamu dan antusiasmu'],['hari-yang-bikin-tenang.webp','Hari yang bikin tenang'],['kamu-memperhatikan-detail.webp','Kamu lagi merhatiin detail'],['foto-6.jpeg','Manyunnya bikin gemas'],['foto-8.jpeg','Semoga makin banyak jalan bareng']],
+ gifts:[['foto-9.jpeg','Senyum kamu'],['foto-10.jpeg','Tawa kamu'],['foto-11.jpeg','Cerita kecilmu']],
+ chat:['foto-2.jpeg','foto-1.jpeg']
+};
+const aud=$('#aud'),mb=$('#music');let stage=0;
+for(let i=0;i<14;i++){const e=document.createElement('i');e.style.cssText=`left:${Math.random()*100}%;--s:${12+Math.random()*22}px;--d:${12+Math.random()*14}s;animation-delay:-${Math.random()*20}s`;e.innerHTML=HEART;$('#amb').append(e)}
+function confetti(n=40){for(let i=0;i<n;i++){const e=document.createElement('div');e.className='cf';e.style.cssText=`left:${Math.random()*100}%;width:${14+Math.random()*18}px;color:${['#e0517f','#ff9ebd','#c9a15a','#fff'][i%4]};animation-delay:${Math.random()*.6}s`;e.innerHTML=HEART;document.body.append(e);setTimeout(()=>e.remove(),3600)}}
+document.addEventListener('pointerdown',e=>{for(let i=0;i<3;i++){const p=document.createElement('div');p.className='sp';p.style.cssText=`left:${e.clientX-9}px;top:${e.clientY-9}px;--x:${(Math.random()-.5)*70}px`;p.innerHTML=HEART;document.body.append(p);setTimeout(()=>p.remove(),950)}});
+function unlock(ids){stage++;$('#bar').style.width=(stage/6*100)+'%';confetti();ids.forEach(id=>{const s=$('#'+id);s.classList.remove('lock');s.classList.add('pop')});setTimeout(()=>$('#'+ids[0]).scrollIntoView({behavior:'smooth'}),450)}
+function openCard(){if($('#cover').classList.contains('open'))return;$('#cover').classList.add('open');aud.volume=.6;aud.play().catch(()=>{});mb.style.display='block';$('#bar').style.width='6%';setTimeout(()=>$('#cover').classList.add('gone'),900);confetti(25)}
+$('#openBtn').onclick=$('#env').onclick=openCard;
+mb.onclick=()=>{if(aud.paused){aud.play();mb.classList.remove('off')}else{aud.pause();mb.classList.add('off')}};
+const hl=['Psst, Anissa!','Hai hai, kamu gemas','Aku jadi malu','Geser ke bawah dong'];let hi=0;
+const hero=$('#hero');hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();hero.style.setProperty('--mx',((e.clientX-r.left)/r.width-.5)*2);hero.style.setProperty('--my',((e.clientY-r.top)/r.height-.5)*2)});
+document.querySelectorAll('.fp').forEach(f=>f.onclick=()=>{f.classList.remove('pp');void f.offsetWidth;f.classList.add('pp');$('#bub').textContent=hl[++hi%hl.length];confetti(8)});
+$('#go').onclick=()=>$('#g1').scrollIntoView({behavior:'smooth'});
+// game1
+let p=0;const bh=$('#bh'),sayings=['Ketuk lagi','Yey, terus','Hampir setengah','Makin hangat','Dikit lagi','Hampir penuh'];
+bh.onclick=()=>{if(p>=100)return;p=Math.min(100,p+8);document.documentElement.style.setProperty('--p',p+'%');bh.style.setProperty('--p',p+'%');$('#mt').style.setProperty('--p',p+'%');bh.classList.remove('t');void bh.offsetWidth;bh.classList.add('t');$('#c1').textContent=p>=100?'Penuh!':sayings[Math.floor(p/17)];if(p>=100)setTimeout(()=>unlock(['gal','g2']),700)};
+// gallery
+const caps=FOTO.gallery;
+[...caps,...caps].forEach(([f,c],j)=>{const i=j%caps.length;const d=document.createElement('div');d.className='pol';d.style.setProperty('--r',(i%2?3:-3)+'deg');d.innerHTML=`<div>${IMG(f)}</div><p>${c}</p>`;d.onclick=()=>d.classList.toggle('on');$('#rail').append(d)});
+const rl=$('#rail');let pos=0,last=0,hold=false,tm;
+const stop=()=>{hold=true;clearTimeout(tm)},go=()=>{clearTimeout(tm);tm=setTimeout(()=>hold=false,2200)};
+['pointerdown','touchstart','wheel'].forEach(e=>rl.addEventListener(e,stop,{passive:true}));['pointerup','touchend','pointerleave','touchcancel'].forEach(e=>rl.addEventListener(e,go,{passive:true}));
+rl.addEventListener('wheel',go,{passive:true});
+function tick(t){const dt=Math.min((t-last)/1000,.1);last=t;const n=caps.length,per=rl.children[n]?rl.children[n].offsetLeft-rl.children[0].offsetLeft:0;
+ if(per>0){if(!hold&&!rl.querySelector('.on')){pos+=38*dt;if(pos>=per)pos-=per;rl.scrollLeft=pos}else{let sl=rl.scrollLeft;if(sl>=per)sl-=per,rl.scrollLeft=sl;pos=sl}}
+ requestAnimationFrame(tick)}
+requestAnimationFrame(tick);
+// quiz
+const Q=[['Siapa yang suka senyum-senyum sendiri tiap lihat chat dari Anissa?',[['Dafin','Betul! Dafin, tentu saja.'],['Dafin juga','Betul juga! Tetap Dafin.'],['Dafin lagi','Betul lagi! Dafin terus.']]],
+['Siapa yang paling sering nungguin balasan chat dari Anissa?',[['Dafin','Tepat! Dafin sampai cek HP tiap menit.'],['Pasti Dafin','Pasti! Sampai lupa makan.'],['Dafin, siapa lagi','Yap, siapa lagi kalau bukan Dafin.']]],
+['Siapa yang pengen jadi tempat pulang buat Anissa?',[['Dafin','Benar sekali! Dafin.'],['Dafin banget','Banget! Dafin banget.'],['Dafin dong','Dong! Dafin dong.']]]];
+let qi=0;function showQ(){const q=Q[qi];$('#fb').textContent='';$('#qa').innerHTML=`<div class="q">${q[0]}</div><div class="opts"></div>`;let done=false;q[1].forEach(([t,r])=>{const b=document.createElement('button');b.className='opt';b.textContent=t;b.onclick=()=>{if(done)return;done=true;b.classList.add('good');$('#fb').textContent=r;confetti(14);setTimeout(()=>{qi++;qi<Q.length?showQ():(($('#qa').innerHTML='<div class="q">Semua benar! Jawabannya selalu Dafin.</div>'),$('#fb').textContent='',unlock(['booth','vid','g3']))},1300)};$('#qa .opts').append(b)})}
+showQ();
+// booth + video
+$('#strip').onclick=e=>{const s=e.currentTarget;s.classList.remove('w');void s.offsetWidth;s.classList.add('w');confetti(14)};
+const vids=[$('#v'),$('#vc')];
+vids.forEach(x=>{x.onplay=()=>{aud.volume=.08;vids.forEach(o=>o!==x&&o.pause())};x.onpause=x.onended=()=>aud.volume=.6});
+// confess video
+let cfDone=false;
+const cfGo=()=>{if(cfDone)return;cfDone=true;$('#vc').pause();unlock(['bq']);$('#cfNext').style.display='none';$('#cfSkip').style.display='none'};
+$('#vc').addEventListener('ended',()=>$('#cfNext').style.display='inline-block');
+$('#cfNext').onclick=$('#cfSkip').onclick=cfGo;
+// gifts
+let g=0;
+FOTO.gifts.forEach(([f,t],i)=>{const d=document.createElement('div');d.className='gb';d.style.animationDelay=i*.3+'s';d.innerHTML=`<span class="f">${GIFT}</span><span class="b"><div class="ph">${IMG(f)}</div>${t}</span>`;d.onclick=()=>{if(d.classList.contains('on'))return;d.classList.add('on');confetti(10);$('#c3').textContent=++g;if(g==3)setTimeout(()=>unlock(['letter']),1000)};$('#gifts').append(d)});
+// chat
+const G=[
+['Hai Anissa...','Jujur, deg-degan banget nulis ini.'],
+['Sejak ada kamu, semuanya terasa beda.','Energimu hangat, bikin siapa pun nyaman di dekatmu.','i:0'],
+['Mungkin selama ini aku kelihatan biasa aja.','Tapi makin kenal kamu, aku sadar kehadiranmu penting banget buat aku.'],
+['Aku nggak mau muluk-muluk, aku cuma mau jujur sama perasaanku...'],
+['!Aku sayang sama kamu, Anissa. Lebih dari sekadar teman.','i:1'],
+['Apa pun jawabanmu nanti, makasih ya udah bawa banyak kebaikan di hidupku.','~I just want you to know how much you mean to me.','_Dafin']];
+const L=['Mulai','Terus?','Lanjut dong','Lalu?','Deg-degan, lanjut','Satu lagi'];
+let gi=0,busy=false;const ch=$('#chat'),nx=$('#nx');
+function add(t){const b=document.createElement('div');b.className='bb';const k=t[0];
+ if(t.startsWith('i:')){b.classList.add('im');b.innerHTML=`<div>${IMG(FOTO.chat[+t.slice(2)])}</div>`}
+ else if(k=='!'){b.classList.add('hl');b.textContent=t.slice(1)}else if(k=='~'){b.classList.add('en');b.textContent=t.slice(1)}else if(k=='_'){b.classList.add('sg');b.textContent=t.slice(1)}else b.textContent=t;
+ ch.append(b);b.scrollIntoView({behavior:'smooth',block:'center'})}
+nx.onclick=()=>{if(busy)return;if(gi>=G.length){unlock(['confess']);nx.style.display='none';return}busy=true;nx.style.opacity=.5;const grp=G[gi++];
+ grp.forEach((t,i)=>setTimeout(()=>{const d=document.createElement('div');d.className='dots';d.innerHTML='<i></i><i></i><i></i>';ch.append(d);setTimeout(()=>{d.remove();add(t);if(i==grp.length-1){busy=false;nx.style.opacity=1;nx.textContent=gi>=G.length?'Ada video buat kamu':L[gi]}},650)},i*1500))};
+// bouquet
+const BK=[
+{t:'Mawar merah: keberanian',d:'Keberanian buat akhirnya jujur tentang perasaanku ke kamu.'},
+{t:'Kupu-kupu: kebebasan',d:'Sama kamu, aku merasa bebas jadi versi diriku yang paling nyata.'},
+{t:'Mahkota: spesial',d:'Karena di mataku, kamu selalu punya tempat yang paling istimewa.'},
+{t:'Warna hitam: ketegasan',d:'Niat yang sungguh-sungguh, bukan sekadar main-main atau kebetulan.'},
+{t:'Pita merah: kehangatan',d:'Energi dari kamu yang selalu menular dan bikin hari-hariku lebih hidup.'}];
+const bsv=$('#bsv');let seen=0;
+$('#bd').innerHTML='<i></i>'.repeat(5);
+bsv.addEventListener('click',e=>{
+ if(seen>=5)return;
+ const b=BK[seen],bi=$('#bi');
+ bi.innerHTML=`<h3>${b.t}</h3><p>${b.d}</p>`;bi.classList.remove('pop');void bi.offsetWidth;bi.classList.add('pop');
+ bsv.style.transform='scale(0.96)';setTimeout(()=>bsv.style.transform='scale(1)',200);
+ $('#bd').children[seen++].classList.add('on');confetti(8);
+ if(seen==5)setTimeout(()=>{bi.innerHTML='<h3>Satu buket, satu pita</h3><p>Semuanya diikat jadi satu: buket buat kamu, dari Dafin.</p>';bi.classList.remove('pop');void bi.offsetWidth;bi.classList.add('pop');$('#bkBtn').style.display='inline-block';confetti(40)},2400)
+});
+// INI YANG KURANG TADI
+$('#bkBtn').onclick=e=>{unlock(['final']);e.currentTarget.style.display='none'};
+
+// final
+const no=$('#no');function run(e){e&&e.preventDefault();const b=$('#ans').getBoundingClientRect();no.style.position='absolute';no.style.left=Math.random()*(b.width-no.offsetWidth)+'px';no.style.top=Math.random()*80+'px'}
+no.addEventListener('mouseenter',run);no.addEventListener('touchstart',run);no.onclick=run;
+$('#yes').onclick=()=>{$('#ans').style.display='none';$('#qh').style.display='none';$('#thanks').classList.add('show');confetti(90);setTimeout(()=>confetti(60),900)};
+</script>
+</body>
+</html>
